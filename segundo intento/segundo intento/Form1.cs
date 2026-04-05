@@ -1,10 +1,10 @@
-namespace ProyectoVisual
+namespace segundo_intento
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
-            InitializeComponent(GetTextBox11());
+            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -17,11 +17,22 @@ namespace ProyectoVisual
             int numero1 = 15;
             int numero2 = 8;
             int total = numero1 + numero2;
+
+            textBox1.Text = total.ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int numero1 = 15;
+            int numero2 = 8;
+            int total = numero1 - numero2;
+
+            textBox2.Text = total.ToString();
         }
     }
 }
